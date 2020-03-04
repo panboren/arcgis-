@@ -1,3 +1,4 @@
 ÊÀ½çArcGISÉú»îµØÍ¼¼¯   £º  https://livingatlas.arcgis.com/en/browse/#d=2&type=layers&cont=esriOnly&categories=Basemaps:11110
 世界ArcGIS生活地图集：https：//livingatlas.arcgis.com/en/browse/#d=2&type=layers&cont=esriOnly&categories=Basemaps：11110
 国外arcgis博客 https://odoe.net/blog/
+arcgis官方博客https://www.esri.com/arcgis-blog/overview/

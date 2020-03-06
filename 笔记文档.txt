@@ -1,5 +1,36 @@
-ÊÀ½çArcGISÉú»îµØÍ¼¼¯   £º  https://livingatlas.arcgis.com/en/browse/#d=2&type=layers&cont=esriOnly&categories=Basemaps:11110
 世界ArcGIS生活地图集：https：//livingatlas.arcgis.com/en/browse/#d=2&type=layers&cont=esriOnly&categories=Basemaps：11110
 国外arcgis博客 https://odoe.net/blog/
 arcgis官方博客https://www.esri.com/arcgis-blog/overview/
 如何使用3D符号发布Web样式 https://www.esri.com/arcgis-blog/products/arcgis-online/3d-gis/how-to-publish-web-styles-with-3d-symbols/
+
+
+
+webgl 动画  https://blog.csdn.net/weixin_40184249/article/details/81587036
+
+                        function animate(){
+                            let clone=gra.geometry.clone();
+                            clone.latitude+=0.00001;
+                         
+                            gra.geometry=clone;
+                            console.log(gra);
+                        }
+
+                        (function drawFrame() {
+                            //用setTimeout是为了更好地控制动画的速度,每150毫秒绘制一次
+                            timer = setTimeout(function () {
+                                if (animationId) {
+                                    cancelAnimationFrame(animationId); //每次运行动画前，先清除之前的
+                                }
+                                animationId = requestAnimationFrame(drawFrame); //循环更新动画
+                                animate();
+                            }, 150);
+                        })();
+                        //清除动画
+                        function clearAnimation() {
+                            if (animationId) {
+                                cancelAnimationFrame(animationId);
+                            }
+                            if (timer) {
+                                clearTimeout(timer);
+                            }
+                        }
